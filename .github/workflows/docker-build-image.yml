@@ -8,7 +8,7 @@ env:
   MINOR: 0
 
 jobs:
-  build-application:
+  build-docker-image:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
