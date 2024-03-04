@@ -18,8 +18,6 @@ jobs:
       - name: Build Docker container and push it to GitHub Packages
         uses: lojoh/build-and-push-multi-platform-docker-images-action@2.0
         with:
-          docker-args: |
-            ReleaseVersion=${{ steps.version.outputs.version }}
           docker-context: .
           docker-file: Dockerfile
           docker-registry: ghcr.io/fehu
