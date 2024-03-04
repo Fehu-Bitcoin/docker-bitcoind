@@ -22,7 +22,7 @@ jobs:
           docker-file: Dockerfile
           docker-registry: ghcr.io/fehu
           github-token: ${{ secrets.PAT }}
-          image-name: fehu-bitcoind
+          image-name: docker-bitcoind
           tag: ${{ steps.version.outputs.version }}
           platform: linux/amd64
 
